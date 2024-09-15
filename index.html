@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>E-Macdino Laundry Services</title>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header class="hero">
+      <img src="images/e-macdino logo.png" alt="E-Macdino Logo" class="logo" />
+      <div class="hero__content-box">
+        <h1 class="primary__heading">E-Macdino Laundry Services</h1>
+        <p class="hero__description">
+          Reliable laundry care that keeps your clothes fresh and clean,
+          delivered on time.
+        </p>
+        <a href="#" class="btn">Schedule A Service</a>
+      </div>
+    </header>
+    <footer class="footer">
+      <p>
+        <ion-icon name="location-outline"></ion-icon>
+        <span>80, Wilmer Crescent, Olodi Apapa, Lagos.</span>
+      </p>
+      <p>
+        <ion-icon name="logo-whatsapp"></ion-icon>
+        <ion-icon name="call-outline"></ion-icon>
+        <span>09032931068 / 08036450300 / 08162343786</span>
+      </p>
+    </footer>
+
+    <div class="overlay">
+      <form action="#" class="form">
+        <h3 class="form__heading">Fill out this form</h3>
+
+        <div class="form__group">
+          <label for="firstname" class="form__label">First Name</label>
+          <input
+            type="text"
+            class="form__input"
+            id="firstname"
+            placeholder="Dele Edet"
+            required
+          />
+        </div>
+
+        <div class="form__group">
+          <label for="phone" class="form__label">Phone</label>
+          <input
+            type="number"
+            class="form__input"
+            id="phone"
+            placeholder="234 915 553 1282"
+            required
+          />
+        </div>
+
+        <div class="form__group">
+          <label for="location" class="form__label">Location</label>
+          <input
+            type="text"
+            class="form__input"
+            id="location"
+            placeholder="20, Ogunmade Str, Olodi Apapa, Lagos"
+            required
+          />
+        </div>
+
+        <div class="form__group">
+          <label for="email" class="form__label">Email Address</label>
+          <input
+            type="email"
+            class="form__input"
+            id="email"
+            placeholder="hello@gmail.com"
+            required
+          />
+        </div>
+
+        <div class="form__group">
+          <label for="date" class="form__label">Service Date</label>
+          <input type="date" class="form__input" id="date" value="" required />
+        </div>
+
+        <div class="form__group">
+          <label for="time" class="form__label">Service Time</label>
+          <input type="time" class="form__input" id="time" required />
+        </div>
+
+        <div class="form__group-textarea">
+          <label for="description" class="form__label">Message</label>
+          <textarea
+            id="description"
+            class="form__textarea"
+            required
+            placeholder="What service are we to render?"
+          ></textarea>
+        </div>
+
+        <button class="form__btn">
+          <span class="loader"></span>
+          <span class="text">Place Order</span>
+        </button>
+      </form>
+      <button class="close__btn">&times;</button>
+    </div>
+
+    <div id="popup" class="popup">
+      <div class="popup-content">
+        <span class="close-btn">&times;</span>
+        <h2>Order Confirmation</h2>
+        <p>
+          Your laundry order has been received. Check your Email to view your
+          Order ID.
+        </p>
+        <p>You'll be contacted by E-macdino's team for further information.</p>
+      </div>
+    </div>
+  </body>
+</html>
